@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 1024px) {
+    .bento_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        grid-auto-rows: auto;
+        margin: 40px auto;
+
+        grid-template-areas:
+            "card1 card2 card2 card3"
+            "card1 card4 card5 card3"
+            "card6 card7 card8 card8";
+    }
+
+    .card1 {
+        grid-area: card1;
+    }
+
+    .card2 {
+        grid-area: card2;
+    }
+
+    .card3 {
+        grid-area: card3;
+    }
+
+    .card4 {
+        grid-area: card4;
+    }
+
+    .card5 {
+        grid-area: card5;
+    }
+
+    .card6 {
+        grid-area: card6;
+    }
+
+    .card7 {
+        grid-area: card7;
+    }
+
+    .card8 {
+        grid-area: card8;
+    }
+}
+
+
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+}
+
+.bento_grid {
+    display: grid;
+    max-width: 960px;
+
+    margin: 40px auto;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    grid-template-areas:
+        "card1 card2 card2 card3"
+        "card1 card4 card5 card3"
+        "card6 card7 card8 card8";
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    overflow: hidden;
+}
+
+.card1 {
+    background-color: var(--Yellow-100);
+    height: 380px;
+    display: block;
+}
+
+.card1 .create {
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    line-height: 1;
+    margin-top: 30px;
+}
+
+.card1 .create span {
+    color: var(--Purple-500);
+    font-style: italic;
+    display: block;
+
+}
+
+.card1 img {
+    width: 170px;
+    margin: 5% auto;
+}
+
+.card2 {
+    background-color: var(--Purple-500);
+    height: 290px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.card2 .social {
+    color: var(--White);
+    font-size: 50px;
+    margin-top: 30px;
+    line-height: 1;
+}
+
+.card2 .social .yellow {
+    color: var(--Yellow-500);
+}
+
+.card2 img {
+    width: 150px;
+    margin-left: 130px;
+    margin-top: 15px;
+}
+
+.card2 .over {
+    margin-top: 10px;
+    color: var(--White);
+    font-size: 14px;
+    opacity: 80%;
+}
+
+.card3 {
+    background-color: var(--Purple-100);
+    height: 520px;
+    overflow: hidden;
+}
+
+.card3 .schedule {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-top: 20px;
+}
+
+.card3 img {
+    width: 155%;
+    margin-top: 15px;
+    max-width: none;
+}
+
+.card3 .optimize {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card4 {
+    background-color: var(--White);
+    height: 205px;
+}
+
+.card4 img {
+    width: 155%;
+    max-width: none;
+}
+
+.card4 .manage {
+    font-size: 25px;
+    line-height: 0.9;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-top: 10px;
+}
+
+.card5 {
+    background-color: var(--Yellow-500);
+    height: 205px;
+}
+
+.card5 .maintain {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -2px;
+}
+
+.card5 img {
+    margin-top: 20px;
+    max-height: none;
+}
+
+.card6 {
+    background-color: var(--Yellow-500);
+    margin-top: -140px;
+    height: 380px;
+}
+
+.card6 .content {
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    line-height: 0.9;
+
+}
+
+.card6 img {
+    margin-top: 50px;
+    width: 110%;
+    max-width: none;
+}
+
+.card7 {
+    background-color: var(--White);
+    height: 240px;
+}
+
+.card7 .faster .num {
+    font-size: 50px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card7 .faster {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card7 img {
+    margin-top: 30px;
+    width: 150px;
+}
+
+.card8 {
+    background-color: var(--Purple-500);
+    height: 240px;
+    display: flex;
+}
+
+.card8 img {
+    width: 50%;
+}
+
+.card8 .grow {
+    font-size: 30px;
+    color: var(--White);
+    line-height: 1;
+}

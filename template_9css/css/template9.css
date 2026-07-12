@@ -1,0 +1,267 @@
+:root {
+    --Purple-50: hsl(260, 100%, 95%);
+    --Purple-300: hsl(264, 82%, 80%);
+    --Purple-500: hsl(263, 55%, 52%);
+
+    --White: hsl(0, 0%, 100%);
+    --Grey-100: hsl(214, 17%, 92%);
+    --Grey-200: hsl(0, 0%, 81%);
+    --Grey-400: hsl(224, 10%, 45%);
+    --Grey-500: hsl(217, 19%, 35%);
+    --Dark-blue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: var(--Purple-50);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+@media (min-width: 1024px) {
+    .testimonials-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .card-purple {
+        grid-column: span 2;
+    }
+
+    .card-black {
+        grid-column: span 2;
+    }
+
+    .card-white-2 {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+}
+
+.card-purple {
+    background-color: var(--Purple-500);
+    padding: 30px;
+    border-radius: 10px;
+    background-image:
+        url("../image/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 65px;
+    width: 630px;
+    height: 300px;
+}
+
+.card-purple .card-grey,
+.user-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-purple .user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px var(--Purple-300);
+}
+
+.card-purple .user-info .user-details .name {
+    font-size: 12px;
+    color: var(--Grey-100);
+    line-height: 2;
+    font-weight: 200;
+}
+
+.card-purple .user-info .user-details .status {
+    font-size: 10px;
+    color: var(--Grey-200);
+}
+
+.card-purple .headline {
+    color: var(--White);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.card-purple .testimonial-text {
+    color: var(--Grey-200);
+    font-size: small;
+    line-height: 1.5;
+}
+
+.card-grey {
+    background-color: var(--Grey-500);
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.card-grey .user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px var(--Grey-400);
+}
+
+.card-grey .user-info .user-details .name {
+    font-size: 12px;
+    color: var(--Grey-100);
+    line-height: 2;
+    font-weight: 200;
+}
+
+.card-grey .user-info .user-details .status {
+    font-size: 10px;
+    color: var(--Grey-200);
+}
+
+.card-grey .headline {
+    color: var(--White);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.card-grey .testimonial-text {
+    color: var(--Grey-200);
+    font-size: small;
+    line-height: 1.5;
+}
+
+.card-white-1 {
+    background-color: var(--White);
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.card-white-1 .user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px var(--Grey-100);
+}
+
+.card-white-1 .user-info .user-details .name {
+    font-size: 12px;
+    color: var(--Grey-400);
+    line-height: 2;
+    font-weight: 00;
+}
+
+.card-white-1 .user-info .user-details .status {
+    font-size: 10px;
+    color: var(--Grey-400);
+}
+
+.card-white-1 .headline {
+    color: var(--Grey-500);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.card-white-1 .testimonial-text {
+    color: var(--Grey-400);
+    font-size: small;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.card-black {
+    background-color: var(--Dark-blue);
+    padding: 30px;
+    border-radius: 10px;
+    width: 630px;
+    height: 300px;
+}
+
+.card-black .user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px var(--Purple-500);
+}
+
+.card-black .user-info .user-details .name {
+    font-size: 12px;
+    color: var(--Grey-100);
+    line-height: 2;
+    font-weight: 100;
+}
+
+.card-black .user-info .user-details .status {
+    font-size: 10px;
+    color: var(--Grey-200);
+}
+
+.card-black .headline {
+    color: var(--Grey-200);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.card-black .testimonial-text {
+    color: var(--Grey-100);
+    font-size: small;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.card-white-2 {
+    background-color: var(--White);
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    height: 630px;
+}
+
+.card-white-2 .user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px var(--Grey-100);
+}
+
+.card-white-2 .user-info .user-details .name {
+    font-size: 12px;
+    color: var(--Grey-400);
+    line-height: 2;
+}
+
+.card-white-2 .user-info .user-details .status {
+    font-size: 10px;
+    color: var(--Grey-400);
+}
+
+.card-white-2 .headline {
+    color: var(--Grey-500);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.card-white-2 .testimonial-text {
+    color: var(--Grey-400);
+    font-size: small;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.card-black,
+.card-grey,
+.card-purple,
+.card-white-1,
+.card-white-2 {
+    box-shadow: 44px 44px 20px 0px var(--Grey-200);
+}

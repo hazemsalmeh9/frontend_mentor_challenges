@@ -1,0 +1,319 @@
+:root {
+    --Green-500: hsl(171, 66%, 44%);
+    --Green-700: hsl(181, 55%, 33%);
+    --Blue-100: hsl(233, 100%, 69%);
+    --Blue-200: hsl(243, 90%, 59%);
+    --Gray-700: hsl(210, 10%, 33%);
+    --Gray-500: hsl(201, 11%, 66%);
+    --Gray-400: hsla(149, 52%, 86%, 0.207);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image:
+        url("../image/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+    text-align: center;
+}
+
+.header_logo img {
+    width: 125px;
+    height: 125px;
+}
+
+.header_logo {
+    width: 125px;
+    height: auto;
+}
+
+.header_text {
+    margin-top: 30px;
+}
+
+.header_text .history {
+    font-size: 45px;
+    color: var(--Gray-700);
+}
+
+.header_text p {
+    margin-top: -10px;
+    font-size: 20px;
+    width: 700px;
+    color: var(--Gray-500);
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+
+header .download_button {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ios {
+    background-color: var(--Green-500);
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 4px 5px 20px 0px var(--Green-700);
+    transition: all ease .4s;
+}
+
+.mac {
+    transition: all ease .4s;
+    background-color: var(--Blue-100);
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 4px 5px 20px 0px var(--Blue-200);
+}
+
+.ios:hover {
+    background-color: var(--Green-700);
+    transform: scale(1.04);
+}
+
+.mac:hover {
+    background-color: var(--Blue-200);
+    transform: scale(1.04);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+}
+
+.main_text {
+    text-align: center;
+}
+
+.main_text .keep {
+    font-size: 35px;
+    color: var(--Gray-700);
+    margin-bottom: 15px;
+}
+
+.main_text p {
+    width: 610px;
+    line-height: 1.5;
+    color: var(--Gray-500);
+    margin-bottom: 70px;
+}
+
+.computer_place {
+    display: flex;
+    gap: 100px;
+    margin-right: 300px;
+}
+
+.computer_promotion {
+    display: block;
+    line-height: 1.8;
+    margin-top: 50px;
+}
+
+.computer_place .computer_promotion h3 {
+    font-size: 25px;
+    color: var(--Gray-700);
+}
+
+.computer_place .computer_promotion p {
+    color: var(--Gray-500);
+    width: 340px;
+}
+
+.quick_search,
+.iCloud_Sync {
+    margin-bottom: 50px;
+}
+
+.mobil_place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.mobil_place .access {
+    font-size: 35px;
+    color: var(--Gray-700);
+    margin-bottom: 15px;
+}
+
+.mobil_place p {
+    line-height: 1.5;
+    color: var(--Gray-500);
+    margin-bottom: 70px;
+    text-align: center;
+    width: 600px;
+}
+
+.mobil_place .workflow {
+    font-size: 35px;
+    color: var(--Gray-700);
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.logos {
+    display: flex;
+    /* استخدم max-width بدلاً من width لضمان التوسيط في الشاشات المختلفة */
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    /* لتوسيط الحاوية نفسها في الصفحة */
+    justify-content: center;
+    align-items: flex-start;
+    /* التغيير الأهم: لتبدأ العناصر من الأعلى */
+    gap: 40px;
+}
+
+.logos>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.logos img {
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.logos h2 {
+    font-size: 25px;
+    color: var(--Gray-700);
+    margin-bottom: 20px;
+}
+
+.logos p {
+    line-height: 1.5;
+    color: var(--Gray-500);
+    max-width: 350px;
+}
+
+.companies {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    gap: 100px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.clipboard_for {
+    text-align: center;
+}
+
+.clipboard_for .clipboard {
+    font-size: 35px;
+    color: var(--Gray-700);
+    margin-bottom: 20px;
+}
+
+.clipboard_for p {
+    line-height: 1.5;
+    color: var(--Gray-500);
+    margin-bottom: 50px;
+    width: 600px;
+}
+
+.clipboard_for .download_button {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.footer_item {
+    background-color: var(--Gray-400);
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    gap: 150px;
+}
+
+.footer_logo {
+    width: 50px;
+    height: 50px;
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 120px;
+}
+
+.footer_text {
+    color: var(--Gray-500);
+    text-align: center;
+}
+
+.footer_text .top_footer_text {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 15px;
+}
+
+.footer_text .bottum_footer_text {
+    display: flex;
+    gap: 35px;
+}
+
+.footer_item .socail_media_logos {
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all ease 0.8s;
+}
+
+.socail_media_logos .x:hover {
+    filter: invert(62%) sepia(94%) saturate(364%) hue-rotate(135deg) brightness(101%) contrast(101%);
+    cursor: pointer;
+    transform: scale(1.08);
+
+}
+
+.socail_media_logos .fecebook:hover {
+    filter: invert(39%) sepia(57%) saturate(2000%) hue-rotate(190deg) brightness(95%) contrast(100%);
+    cursor: pointer;
+    transform: scale(1.08);
+
+}
+
+.socail_media_logos .instagram:hover {
+    filter: invert(41%) sepia(33%) saturate(5450%) hue-rotate(330deg) brightness(95%) contrast(105%);
+    cursor: pointer;
+    transform: scale(1.08);
+
+}
