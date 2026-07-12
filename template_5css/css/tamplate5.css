@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --blue-500: hsl(215, 51%, 70%);
+  --cyan-400: hsl(178, 100%, 50%);
+  --blue-950-main-bg: hsl(217, 54%, 11%);
+  --blue-900-card-bg: hsl(216, 50%, 16%);
+  --blue-800-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--blue-950-main-bg);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.cube img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+
+}
+
+.page_card {
+  background-color: var(--blue-900-card-bg);
+  width: 300px;
+  height: 100%;
+  align-items: center;
+  display: block;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 1);
+}
+
+.page_card h1 {
+  font-family: Outfit;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.page_card p {
+  font-family: Outfit;
+  color: var(--blue-500);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.page_card .aitems {
+  display: flex;
+  gap: 80px;
+}
+
+.aitems .eth {
+  display: flex;
+  color: var(--cyan-400);
+  font-family: Outfit;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.aitems .days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: Outfit;
+  font-size: 15px;
+  color: var(--blue-500);
+  margin-bottom: 20px;
+}
+
+hr {
+  opacity: 10%;
+  margin-bottom: 15px;
+
+}
+
+.itadori {
+  display: flex;
+  align-items: center;
+}
+
+.itadori .creat {
+  color: var(--blue-500);
+  margin-right: 5px;
+  font-family: outfit;
+  font-size: 13px;
+}
+
+.itadori .jules {
+  color: var(--white);
+  font-family: outfit;
+  font-size: 13px;
+}
+
+.itadori img {
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  margin-right: 15px;
+}

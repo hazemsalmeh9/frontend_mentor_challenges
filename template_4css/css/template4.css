@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Young+Serif&display=swap');
+
+:root{
+--Green-500: hsl(158, 36%, 37%);
+--Green-700: hsl(158, 42%, 18%);
+
+
+--Black:hsl(212, 21%, 14%);
+--Grey:hsl(228, 12%, 48%);
+--Cream:hsl(30, 38%, 92%);
+--White:hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    width: 100;
+}
+
+.parfurm img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px 0 0 10px;
+}
+
+.by_card{
+    background-color: var(--White);
+    width: 300px;
+    height: 450px;
+    padding: 25px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.by_card h1{
+    color: var(--Grey);
+    font-family: Montserrat;
+    font-weight:500 ;
+    font-size: small;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.by_card h2 span{
+    font-family:Fraunces ;
+    color: var(--Black);
+    font-weight: bolder;
+    display: block;
+    font-size: 35px;
+    line-height: 1;
+}
+
+.by_card p{
+    font-family:Montserrat ;
+    font-weight: 500;
+    color: var(--Grey);
+    margin-top: 25px ;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.price_discount{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.by_card .price{
+    color: var(--Green-500);
+    font-size: 35px;
+    font-family:Fraunces ;
+    font-weight: 700;
+}
+
+.by_card .discount{
+    font-family: Montserrat;
+    font-weight: 500;
+    color: var(--Grey);
+    font-size: small;
+    padding: 15px;
+    text-decoration: line-through;
+}
+
+.by_card button{
+    background-color: var(--Green-500);
+    color: var(--White);
+    font-family:Montserrat ;
+    font-weight: 700;
+    width:250px;
+    height: 50px;
+    border-radius:10px ;
+    border: none;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.by_card .button :hover{
+    background: var(--Green-700);
+}
+
+
+
+
+

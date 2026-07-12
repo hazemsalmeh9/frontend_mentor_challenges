@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --primary-magenta: hsl(300, 43%, 22%);
+    --accent-pink: hsl(333, 80%, 67%);
+    --text-gray: hsl(303, 10%, 53%);
+    --bg-light: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+    background-image:
+        url("../image/bg-pattern-top-desktop.svg"),
+        url("../image/bg-pattern-bottom-desktop.svg");
+
+    background-position: top left, bottom right;
+    background-attachment: fixed, fixed;
+
+    background-repeat: no-repeat, no-repeat;
+}
+
+.paje {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.top_section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    margin-left: 80px;
+}
+
+.paje .top_left_section .title span {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--primary-magenta);
+    display: flex;
+    line-height: 0.9;
+    letter-spacing: -2px;
+}
+
+.title {
+    margin-bottom: 25px;
+}
+
+.top_left_section {
+    margin-top: -60px;
+    margin-left: -60px;
+    display: block;
+}
+
+.top_left_section p span {
+    display: flex;
+    color: var(--text-gray);
+    line-height: 1.2;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+
+.top_right_section {
+    margin-top: -50px;
+}
+
+.top_right_section .reviews,
+.report,
+.besttech {
+    background-color: var(--bg-light);
+    height: 45px;
+    line-height: 3;
+    margin: 13px;
+    border-radius: 7px;
+    width: 350px;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.top_right_section .stars img {
+    width: 13px;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_right_section span {
+    color: var(--primary-magenta);
+    font-weight: 600;
+    font-size: small;
+}
+
+.top_section .top_right_section .report {
+    margin-left: 50px;
+}
+
+.top_section .top_right_section .besttech {
+    margin-left: 100px;
+}
+
+.bottom_section {
+    margin-top: 50px;
+    display: flex;
+    margin-right: 100px;
+}
+
+.bottom_section .saber_rev,
+.enkidu_rev,
+.gil_rev {
+    background-color: var(--primary-magenta);
+    border-radius: 7px;
+    padding: 30px;
+    width: 325px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    height: 200px;
+}
+
+.saber_rev,
+.enkidu_rev,
+.gil_rev,
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.saber_rev,
+.enkidu_rev,
+.gil_rev,
+.prof_item,
+.name {
+    display: block;
+    color: var(--white);
+    font-size: small;
+    margin-top: 5px;
+}
+
+.saber_rev,
+.enkidu_rev,
+.gil_rev,
+.prof_item,
+.buyer {
+    color: var(--accent-pink);
+    font-size: small;
+}
+
+.saber_rev,
+.enkidu_rev,
+.gil_rev p {
+    color: var(--white);
+    font-size: small;
+}
+
+.bottom_section .enkidu_rev {
+    margin-top: 30px;
+}
+
+.bottom_section .gil_rev {
+    margin-top: 60px;
+}
+
+
+
+
+
+.bottom_section img {
+    width: 30px;
+    border-radius: 50%;
+}

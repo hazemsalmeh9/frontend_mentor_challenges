@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Blue-600: hsl(185, 75%, 39%);
+    --Navy-950: hsl(229, 23%, 23%);
+    --Gray-500: hsl(227, 10%, 46%);
+
+    --Gray-100: hsl(225, 10%, 92%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Blue-600);
+    font-family: 'Kumbh Sans', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image:
+        url('../image/bg-pattern-top.svg'),
+        url('../image/bg-pattern-bottom.svg');
+
+    background-position:
+        right 50vw bottom 40vh,
+        left 45vw top 50vh;
+
+    background-repeat: no-repeat;
+}
+
+.page_card {
+    background-color: var(--Gray-100);
+    padding-bottom: 20px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.pattern_card img {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+
+}
+
+.profail img {
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: -55px;
+    border-radius: 50%;
+    border: 5px solid var(--Gray-100);
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.name {
+    color: var(--Navy-950);
+    font-family: Kumbh Sans;
+    font-weight: bold;
+}
+
+.age {
+    color: var(--Gray-500);
+}
+
+.country {
+    color: var(--Gray-500);
+    font-weight: lighter;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+hr {
+    opacity: 20%;
+    margin-bottom: 20px;
+}
+
+.num {
+    font-weight: bold;
+    color: var(--Navy-950);
+    margin-bottom: 10px;
+}
+
+.like {
+    margin-left: 50px;
+    ;
+    margin-right: 50px;
+    ;
+}
+
+.likes {
+    margin-left: 50px;
+    ;
+    margin-right: 50px;
+    ;
+}
+
+.acount_information {
+    font-size: 10px;
+    color: var(--Gray-500);
+    margin-right: 15px;
+    letter-spacing: 1px;
+}

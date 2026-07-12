@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Young+Serif&display=swap');
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    --light-slate-blue-bg: hsl(252, 100%, 67%);
+    --light-royal-blue-bg: hsl(241, 81%, 54%);
+
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    width: 100;
+}
+
+.half_card {
+    background: linear-gradient(var(--light-slate-blue-bg), var(--light-royal-blue-bg));
+    width: 350px;
+    height: 450px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+    margin-right: -150px;
+    position: relative;
+}
+
+.half_card h1 {
+    color: var(--light-lavender);
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.apartment {
+    width: 175px;
+    background: linear-gradient(var(--violet-blue-circle), var(--persian-blue-circle));
+    height: 175px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 10% auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+.apartment .sixseven {
+    color: var(--white);
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.apartment .of {
+    color: var(--light-lavender);
+    font-size: 15px;
+}
+
+h2 {
+    color: var(--white);
+    line-height: 2;
+}
+
+.p {
+    color: var(--light-lavender);
+    font-size: medium;
+    display: block;
+    line-height: 1, 5;
+}
+
+.page_card {
+    background-color: var(--white);
+    width: 500px;
+    height: 450px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.page_card h3 {
+    color: var(--dark-gray-blue);
+    font-size: 25px;
+    line-height: 2;
+}
+
+.scor_cal {
+    padding: 20px;
+    line-height: 3;
+    margin-left: 100px;
+}
+
+ul {
+    display: block;
+    list-style: none;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+ul li {
+    display: flex;
+}
+
+ul .reaction {
+    background-color: hsl(0, 100%, 67%, 10%);
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul .memory {
+    background-color: hsl(39, 100%, 56%, 10%);
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+
+ul .verbal {
+    background-color: hsl(166, 100%, 37%, 10%);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+ul .visual {
+    background-color: hsl(234, 85%, 45%, 10%);
+    width: 250px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul img {
+    margin-right: 10px;
+}
+
+ul .t_reaction {
+    color: var(--light-red);
+    margin-right: 62px;
+}
+
+ul .t_memory {
+    color: var(--orangey-yellow);
+    margin-right: 65px;
+}
+
+ul .t_verbal {
+    color: var(--green-teal);
+    margin-right: 78px;
+
+}
+
+ul .t_visual {
+    color: var(--cobalt-blue);
+    margin-right: 78px;
+}
+
+.num {
+    color: var(--dark-gray-blue);
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.num2 {
+    color: hsl(224, 30%, 27%, 50%);
+}
+
+.continue button {
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    border-radius: 30px;
+    width: 250px;
+    height: 50px;
+    display: block;
+    margin-left: 60px;
+    border: none;
+}
+
+.continue :hover {
+    background: linear-gradient(var(--light-slate-blue-bg), var(--light-royal-blue-bg));
+}
