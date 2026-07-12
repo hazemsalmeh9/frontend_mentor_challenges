@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Young+Serif&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-600: hsl(30, 18%, 59%);
+    --stone-900: hsl(30, 10%, 24%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+
+    --body-font: 'Outfit', sans-serif;
+    --heading-font: 'Young Serif', serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--stone-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+hr {
+    margin-bottom: 30px;
+    opacity: 20%;
+}
+
+.recipe_card {
+    background-color: var(--white);
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 30px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipe_card img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--stone-900);
+    font-weight: lighter;
+}
+
+p,
+ol,
+ul {
+    color: rgba(0, 0, 0, 0.721);
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+
+li::marker {
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+.pink {
+    background-color: rgba(255, 192, 203, 0.223);
+    border-radius: 15px;
+    height: 200px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.pink h3 {
+    color: var(--rose-800);
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+.pink ul {
+    margin-left: 25px;
+    line-height: 2em;
+}
+
+span {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.721);
+}
+
+.white h3 {
+    color: var(--brown-800);
+    font-size: x-large;
+    font-family: var(--heading-font);
+    font-weight: lighter;
+}
+
+.white ul,
+ol {
+    padding: 20px;
+    margin-left: 20px;
+    line-height: 2em;
+}
+
+.table_edit h3 {
+    color: var(--brown-800);
+    font-size: x-large;
+    font-family: var(--heading-font);
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+table{
+    width: 600px;
+    margin-left:20px;
+    border-collapse: collapse;
+}
+
+table td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.19) ;
+    line-height: 3;
+    padding-left: 20px
+
+}
+
+.num{
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+tr:last-child td{
+    border-bottom: none;
+}
+
+@media (min-width:375px) and (max-width:1440) {
+    
+}
+
+
+
+
+
+
